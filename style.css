@@ -417,6 +417,7 @@ section { padding: 7rem 3rem 3rem; }
 
 /* ── Responsive ── */
 @media (max-width: 900px) {
+    /* Navigation tab moves to Row format. */
     nav {
       width: 100%;
       height: auto;
@@ -429,9 +430,18 @@ section { padding: 7rem 3rem 3rem; }
     }
     .nav-links { flex-direction: row; gap: 1.5rem; margin-bottom: 0; }
     .nav-logo { margin-bottom: 0; }
+    
+    /* Hide Photo*/
+    .hero-visual {
+        display: none;
+      }
+      
+    /* Remove padding */
     body { padding-left: 0; }
+
+    /* Project grids shrink to 1 column instead of 2. */
     .projects-grid {
         grid-template-columns: 1fr;
       }
 
-  }
+    }
