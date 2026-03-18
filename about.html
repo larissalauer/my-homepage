@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Larissa Lauer — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+    
+  <link rel="stylesheet" href="style.css">
+  
+<!-- Using style.css for things like nav/cursor, 
+but also doing some customization below: -->
+<style>
+    body {
+      background: var(--dark);
+    }
+    /* ── Sections ── */
+    section { padding: 7rem 3rem 3rem; }
+    .section-title {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      color: var(--teal);
+      margin-bottom: 4rem;
+    }
+
+    /* ── About ── */
+    #about { 
+      background: var(--light);
+      padding-bottom: 7rem;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: start;
+    }
+    .about-body {
+      color: var(--dark);
+      line-height: 1.9;
+      font-size: 0.95rem;
+      padding-bottom: 6rem;
+    }
+    .about-body p + p { margin-top: 1.2rem; }
+    .about-body strong {font-weight: 600; }
+</style>
+
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">L<span>L</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  
+  <!-- About -->
+  <section id="about">
+    <div class="about-grid">
+      <div>
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-body reveal">
+          <p>
+            Write a couple of paragraphs here that tell your story.
+            What drives you, what you've worked on, what kind of problems
+            you love solving. Keep it <strong>human and honest</strong>.
+          </p>
+          <p>
+            Feel free to mention where you're based, your background,
+            or what you're currently working on. This is your chance to
+            go beyond the resume and show <strong>who you actually are</strong>.
+          </p>
+        </div>
+        <br>
+      </div>
+    </div>
+  </section>
+
+<footer>
+  <span>Thanks for visiting!</span>Built by Larissa Lauer.
+</footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

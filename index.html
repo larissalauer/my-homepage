@@ -1,62 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | My GitHub Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Larissa Lauer — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">MySite</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="hero">
-            <h1>Welcome to My GitHub Page</h1>
-            <p>Sharing projects, experiments, and tutorials.</p>
-            <button id="learnMore">Learn More</button>
-        </section>
+  <div class="cursor" id="cursor"></div>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Larissa. I work on data, AI, and software projects. This page showcases my work and experiments.</p>
-        </section>
+  <nav id="nav">
+    <a href="#" class="nav-logo">L<span>L</span></a>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project One</h3>
-                    <p>Short description of project one.</p>
-                    <a href="#">View</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project Two</h3>
-                    <p>Short description of project two.</p>
-                    <a href="#">View</a>
-                </div>
-                <!-- Add more project cards as needed -->
-            </div>
-        </section>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="hero-name">
+        <span class="line-accent">Larissa</span><br>
+        <span class="line-stroke">Lauer</span><br>
+      </h1>
+      <p class="hero-desc">
+        Welcome to my portfolio! <br>
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Projects →</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-avatar-wrap">
+        <div class="hero-avatar-bg"></div>
+        <div class="hero-avatar">
+          <img src="circle_cropped_pic.jpeg" alt="Larissa Lauer" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Reach me at <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        </section>
-    </main>
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title-light reveal">Selected<br>Projects.</h2>
+    <div class="projects-grid">
 
-    <footer>
-        <p>&copy; 2026 MySite. Built on GitHub Pages.</p>
-    </footer>
+      <!-- Project 1 -->
+      <div class="project-card reveal">
+        <p class="project-number">01 / Academic Research</p>
+        <h3 class="project-title">Unified Meta-Regression Model for RVAS.</h3>
+        <p class="project-desc">
+          Rare variant association studies (RVAS) of complex traits have emerged as a powerful approach to advance drug discovery and diagnostics. 
+          We applied a unified meta regression model to 1,144 continuous phenotypes from UK Biobank using single variant summary statistics obtained from Genebass. 
+          For each gene discovery, we make available a characterization of whether constrained sites are associated with the phenotype, whether pathogenic sites determined by 
+          structural based predictions are associated with phenotype, and whether broader loss-of-function or missense variant annotation better explains the summary statistics observed.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">R</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Bioinformatics</span>
+          <span class="tag">Genomics</span>
+          <span class="tag">Processing Large Datasets</span>
+          <span class="tag">Bash</span>
+          <span class="tag">SLURM</span>
+          <span class="tag">High performance Computing (HPC) Systems</span>
+        </div>
+        <div class="project-links">
+          <a href="https://larissalauer.shinyapps.io/data_browser/" class="project-link">Browse the results ↗</a>
+          <a href="https://github.com/rivas-lab/phenome-wide-unified-model?tab=readme-ov-file" class="project-link ghost">GitHub →</a>
+          <a href="https://www.biorxiv.org/content/10.1101/2025.01.23.634522v1" class="project-link ghost">Read the preprint →</a>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
+      <!-- Project 2 -->
+      <div class="project-card reveal">
+        <p class="project-number">02 / Project</p>
+        <h3 class="project-title">Education Data Work @ EdTrust.</h3>
+        <p class="project-desc">
+          EdTrust is a non-profit committed to improving educational equity, with a focus on racial equity. 
+          As a data consultant at EdTrust, I developed reproducible data workflows, automating the ingestion of 
+          data from public sources, data cleaning and transformation. This work was done in partnership with
+          EdTrusts' teams of researchers - who rely on reliable and high-quality data for monitoring and reporting on 
+          trends in U.S. education. </p>
+        <p class="project-desc"> 
+          Much of the data I worked with is also available to view on EdTrust's College Results site, which makes available educational outcome data (including financial outcomes, financial aid, & graduation/retention rate data) and student body data 
+          (such as the diversity of the student body and the selectivity of admissions) for both four-year (public/private) and two-year (public) degree-granting institutions.</p>
+        </p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Data Pipelines</span>
+          <span class="tag">Data Cleaning & Validation</span>
+          <span class="tag">Quantitative Research</span>
+          <span class="tag">Policy/Impact Awareness</span>
+        </div>
+        <div class="project-links">
+          <a href="https://collegeresults.org/" class="project-link">EdTrust - College Results ↗</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal">
+        <p class="project-number">03 / Project</p>
+        <h3 class="project-title">Project Title Three</h3>
+        <p class="project-desc">
+          A third project to round out your showcase. Pick the work you're
+          most proud of and describe why it matters.
+        </p>
+        <div class="project-tags">
+          <span class="tag">TypeScript</span>
+          <span class="tag">Figma</span>
+          <span class="tag">GraphQL</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">Live Site ↗</a>
+          <a href="#" class="project-link ghost">GitHub →</a>
+        </div>
+      </div>
+
+       <!-- Project 3 -->
+       <div class="project-card reveal">
+        <p class="project-number">03 / Project</p>
+        <h3 class="project-title">Project Title Three</h3>
+        <p class="project-desc">
+          A third project to round out your showcase. Pick the work you're
+          most proud of and describe why it matters.
+        </p>
+        <div class="project-tags">
+          <span class="tag">TypeScript</span>
+          <span class="tag">Figma</span>
+          <span class="tag">GraphQL</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">Live Site ↗</a>
+          <a href="#" class="project-link ghost">GitHub →</a>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact-inner">
+      <h2 class="contact-giant">
+        Get in<br>
+        <span class="stroke">Touch!</span>
+      </h2>
+      </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/lauerlarissa" class="btn-social">LinkedIn</a>
+          <a href="https://github.com/larissalauer" class="btn-social">GitHub</a>
+          <a href="mailto:lauerlarissa@gmail.com" class="btn-social">⧉ E-Mail</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Thanks for visiting!</span>Built by Larissa Lauer.
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
