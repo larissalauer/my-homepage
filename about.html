@@ -35,7 +35,6 @@ but also doing some customization below: -->
     }
     .about-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
       gap: 6rem;
       align-items: start;
     }
@@ -43,10 +42,19 @@ but also doing some customization below: -->
       color: var(--dark);
       line-height: 1.9;
       font-size: 0.95rem;
-      padding-bottom: 6rem;
+      padding-bottom: 3rem;
     }
     .about-body p + p { margin-top: 1.2rem; }
     .about-body strong {font-weight: 600; }
+    .about-photo {
+      float: right;
+      width: 350px;
+      height: 450px;
+      object-fit: cover;
+      margin-top: 0;
+      margin-left: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
 </style>
 
 </head>
@@ -68,9 +76,21 @@ but also doing some customization below: -->
     <div class="about-grid">
       <div>
         <h2 class="section-title reveal">A bit about me!</h2>
+        <img src="stanford_grad_photo.jpg" class="about-photo" alt="Larissa Lauer" />
         <div class="about-body reveal">
           <p>
-            Hi! I'm still building this website! Pardon the mess while I get this setup... (It's next on my To-Do List).
+            In 2025, I graduated from Stanford University with a B.A. in Data Science. While at Stanford, I conducted undergraduate research in biomedical data science. 
+            Through this work, I developed a strong interest in using data to improve our understanding of disease, from diagnostics, to treatments and patient outcomes. 
+            My interests include precision medicine, genomics, and complex diseases, especially cancer and neurodegenerative disorders. 
+            I’m particularly drawn to work that combines rigorous statistical analysis and computational innovation with real-world impact in healthcare and medicine.
+            <br> <br>
+            <strong>
+              I am currently seeking opportunities where I can contribute to biomedical research while continuing to grow as a data scientist and researcher.
+            </strong>
+            <br> <br>
+            Outside of work, you can find me going for a hike or a trail run in the Arizona desert 🏜️, 
+            practicing yoga 🧘🏻‍♀️, lifting weights 🏋🏻‍♀️, or tending to my (steadily growing) collection of houseplants 🪴.
+
           </p>
         </div>
         <br>
